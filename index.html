@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV – Mbayo Katuta Shandy</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(25px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .animate {
+            animation: fadeUp 0.8s ease forwards;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #1e88e5, #1565c0);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .header img {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            border: 4px solid white;
+            object-fit: cover;
+            margin-bottom: 10px;
+            transition: transform 0.3s;
+        }
+
+        .header img:hover {
+            transform: scale(1.05);
+        }
+
+        .header h1 {
+            margin: 10px 0 5px;
+        }
+
+        /* MARGE DU DEUXIÈME DIV (RÈGLE APPLIQUÉE) */
+        .container {
+            max-width: 900px;
+            margin: 10px auto; /* 25 > 10 → devient 10 */
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #1e88e5;
+            border-left: 5px solid #1e88e5;
+            padding-left: 12px;
+            margin-top: 30px;
+        }
+
+        .section {
+            margin-bottom: 20px;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .skills span {
+            background: #1e88e5;
+            color: white;
+            padding: 7px 14px;
+            border-radius: 20px;
+            margin: 6px;
+            font-size: 0.9em;
+            transition: transform 0.3s;
+        }
+
+        .skills span:hover {
+            transform: translateY(-4px);
+        }
+
+        ul {
+            padding-left: 20px;
+            line-height: 1.8em;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+
+        .buttons a {
+            min-width: 220px;
+            text-align: center;
+            padding: 14px 20px;
+            border-radius: 30px;
+            color: white;
+            text-decoration: none;
+            font-size: 1em;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .buttons a:hover {
+            transform: translateY(-4px);
+            opacity: 0.95;
+        }
+
+        .download { background: #1e88e5; }
+        .portfolio { background: #24292e; }
+        .whatsapp { background: #25D366; }
+        .email { background: #555; }
+
+        footer {
+            text-align: center;
+            color: #777;
+            font-size: 0.85em;
+            margin: 20px;
+        }
+
+        @media (max-width: 600px) {
+
+            body {
+                padding: 0;
+            }
+
+            .container {
+                margin: 5px; /* 15 > 10 → devient 10 */
+                padding: 20px;
+            }
+
+            .buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .buttons a {
+                width: 100%;
+                max-width: 320px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="header animate">
+    <img src="IMG_20240407_130905_751.jpg" alt="Photo de profil">
+    <h1>Mbayo Katuta Shandy</h1>
+    <p>Étudiant en Informatique Industrielle | Développeur junior</p>
+</div>
+
+<div class="container animate">
+
+    <div class="section">
+        <h2>Profil</h2>
+        <p>
+            Étudiant en informatique industrielle (Deuxième Licence), passionné par le développement
+            de logiciels et de systèmes informatiques. À la recherche d’un stage professionnel.
+        </p>
+    </div>
+
+    <div class="section">
+        <h2>Compétences</h2>
+        <div class="skills">
+            <span>Python</span>
+            <span>Réseaux informatiques</span>
+            <span>HTML / CSS</span>
+            <span>PHP</span>
+            <span>Bases de données</span>
+            <span>Arduino</span>
+            <span>Développement logiciel</span>
+            <span>Analyse et logique</span>
+            <span>Travail en équipe</span>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Objectif de stage</h2>
+        <p>
+            Intégrer une entreprise informatique afin de participer à des projets réels,
+            renforcer mes compétences techniques et acquérir une expérience professionnelle.
+        </p>
+    </div>
+
+    <div class="section">
+        <h2>Formation</h2>
+        <ul>
+            <li><strong>Licence Informatique Industrielle</strong> – ISTA Gombe-Matadi (en cours)</li>
+            <li><strong>Systèmes embarqués</strong> – INPP / PracticePro Academy</li>
+            <li><strong>Certification Python</strong> – SoloLearn</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Projets réalisés</h2>
+        <ul>
+            <li>
+                <strong>Logiciel de gestion des notes des élèves</strong><br>
+                Application développée en Python pour l’enregistrement, la gestion et l’affichage des notes.
+            </li>
+            <li>
+                <strong>Système SCADA personnalisé</strong><br>
+                Surveillance du niveau d’eau via microcontrôleur avec transmission et supervision sur ordinateur.
+            </li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Langues</h2>
+        <ul>
+            <li>Français – Très bon niveau</li>
+            <li>Lingala – Courant</li>
+            <li>Swahili – Courant</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Centres d’intérêt</h2>
+        <ul>
+            <li>Programmation et nouvelles technologies</li>
+            <li>Électronique et systèmes embarqués</li>
+            <li>Lecture et apprentissage autodidacte</li>
+            <li>Musique</li>
+        </ul>
+    </div>
+
+    <div class="buttons">
+        <a class="download" href="Projet Web/Cv.pdf" download>📄 Télécharger le CV</a>
+        <a class="portfolio" href="https://github.com/TON-PSEUDO" target="_blank">🌐 GitHub</a>
+        <a class="whatsapp" href="https://wa.me/243896627386" target="_blank">💬 WhatsApp</a>
+        <a class="email" href="mailto:mbayokatuta349@gmail.com?subject=Demande%20de%20stage">✉ Email</a>
+    </div>
+
+</div>
+
+<footer>
+    © 2026 – Mbayo Katuta Shandy
+</footer>
+
+</body>
+</html>
